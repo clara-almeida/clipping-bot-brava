@@ -9,6 +9,8 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 app = Flask(__name__) # Cria uma instância do Flask. 
+port = int(os.environ.get("PORT", 5000))
+app.run(host="0.0.0.0", port=port)
 
 @app.route("/")
 def raspadores():
