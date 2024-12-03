@@ -185,7 +185,7 @@ def get_investing():
                 linha_armazenar = [title_text, link, resumo_text] #armazenar título, link e resumo na planilha
                 sheet.insert_row(linha_armazenar, 2)
                 
-def get_petronotícias():
+def get_petronoticias():
     #captura página "Ultimas Noticias Infomoney"
     result = requests.get("https://petronoticias.com.br/category/og/")
 
@@ -242,4 +242,4 @@ def get_petronotícias():
 get_infomoney()
 get_epbr()
 get_investing()
-get_petronotícias()
+get_petronoticias()
