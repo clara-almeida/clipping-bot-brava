@@ -238,8 +238,4 @@ def get_petronoticias():
 
                 linha_armazenar = [title_text, link, resumo_text] #armazenar título, link e resumo na planilha
                 sheet.insert_row(linha_armazenar, 2)
-                
-get_infomoney()
-get_epbr()
-get_investing()
-get_petronoticias()
+            
