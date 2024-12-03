@@ -10,7 +10,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 app = Flask(__name__) # Cria uma instância do Flask. 
 
-@app.route("/raspadores")
+@app.route("/")
 def raspadores():
     run_epbr = get_epbr()
     run_infomoney = get_infomoney()
