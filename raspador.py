@@ -59,7 +59,7 @@ def get_epbr():
             print("Link já raspado")
 
         else:
-            if "Brava Energia" in main_text:
+            if "Yara" in main_text:
                 prompt = "Resuma a matéria abaixo, referente a uma empresa de petróleo de capital aberto, em um texto de até 300 caracteres. Esse resumo será utilizado pela alta gerência para analisar rapidamente o conteúdo da matéria."
 
                 response = client.chat.completions.create(
