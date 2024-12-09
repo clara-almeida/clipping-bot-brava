@@ -13,7 +13,7 @@ app = Flask(__name__) # Cria uma instância do Flask.
 @app.route("/")
 def raspadores():
     run_epbr = get_epbr()
-    #run_infomoney = get_infomoney()
+    run_infomoney = get_infomoney()
     #run_investing = get_investing()
     #run_petronoticias = get_petronoticias()
     return render_template('raspadores.html')
